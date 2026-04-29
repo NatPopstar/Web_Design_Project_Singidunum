@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,10 +12,9 @@
   <link rel="icon" href="/html_css_only/logo1.png">
 </head>
 <body>
-
   <nav class="nav" aria-label="Main navigation">
     <input type="checkbox" id="navToggle" class="nav__checkbox" />
-    <label for="navToggle" class="nav__label" aria-label="Открыть меню">
+    <label for="navToggle" class="nav__label" aria-label="Open menu">
       <span class="nav__bar"></span>
       <span class="nav__bar"></span>
       <span class="nav__bar"></span>
@@ -34,18 +33,16 @@
   <header class="page-header">
     <div class="page-header__inner">
       <h1 class="page-header__title">Our Gallery</h1>
-      <p class="page-header__subtitle">Счастливые лица наших клиентов со всего мира.</p>
+      <p class="page-header__subtitle">Happy faces of our clients from around the world.</p>
     </div>
   </header>
 
   <main class="gallery-layout">
-
-    <!-- Photos grid -->
     <section class="gallery-photos" aria-label="Photo gallery">
-      <h2 class="gallery-section__heading">Фотографии</h2>
+      <h2 class="gallery-section__heading">Photos</h2>
       <div class="photo-grid">
         <figure class="photo-grid__item">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Somnus_NZ.jpg/1200px-Somnus_NZ.jpg" alt="New Zealand mountains" />
+          <img src="https://t3.ftcdn.net/jpg/03/01/07/96/360_F_301079646_kDiP7JxWXXzDXtu8Xe12q9XBwpXc9Atj.jpg" alt="New Zealand mountains" />
         </figure>
         <figure class="photo-grid__item">
           <img src="https://img.freepik.com/premium-photo/tropical-beach-with-palm-trees-blue-sky_948735-126290.jpg" alt="Tropical beach" />
@@ -58,56 +55,47 @@
         </figure>
         <figure class="photo-grid__item">
           <img src="https://i.ytimg.com/vi/59zD5UD2t4A/maxresdefault.jpg" alt="Canadian Rockies" />
-        </figure>  
+        </figure>
       </div>
-      <a class="btn btn--outline gallery-all-link" href="all-photos.html">Смотреть все фото →</a>
+      <a class="btn btn--outline gallery-all-link" href="all-photos.html">View all photos →</a>
     </section>
 
-    <!-- Reviews -->
     <section class="gallery-reviews" aria-label="Customer reviews">
-      <h2 class="gallery-section__heading">Отзывы клиентов</h2>
-
+      <h2 class="gallery-section__heading">Customer Reviews</h2>
       <div class="reviews-list">
-
         <article class="review-card">
           <div class="review-card__header">
             <div class="review-card__avatar" aria-hidden="true">
               <svg viewBox="0 0 40 40" width="40" height="40"><circle cx="20" cy="20" r="20" fill="rgb(202 140 152)"/><circle cx="20" cy="15" r="7" fill="rgb(241 220 205)"/><ellipse cx="20" cy="35" rx="12" ry="8" fill="rgb(241 220 205)"/></svg>
             </div>
-            <span class="review-card__name">Наташа</span>
+            <span class="review-card__name">Natasha</span>
           </div>
-          <div class="review-card__stars" aria-label="5 из 5">★★★★★</div>
-          <p class="review-card__text">Летела с мужем на Мальдивы — всё прошло как в сказке! Места были зарезервированы заранее, нас встретили с улыбками.</p>
+          <div class="review-card__stars" aria-label="5 out of 5">★★★★★</div>
+          <p class="review-card__text">I flew to the Maldives with my husband — everything went like a dream! Seats were reserved in advance and we were welcomed with big smiles.</p>
         </article>
-
         <article class="review-card">
           <div class="review-card__header">
             <div class="review-card__avatar" aria-hidden="true">
               <svg viewBox="0 0 40 40" width="40" height="40"><circle cx="20" cy="20" r="20" fill="rgb(123 88 113)"/><circle cx="20" cy="15" r="7" fill="rgb(241 220 205)"/><ellipse cx="20" cy="35" rx="12" ry="8" fill="rgb(241 220 205)"/></svg>
             </div>
-            <span class="review-card__name">Маша</span>
+            <span class="review-card__name">Maria</span>
           </div>
-          <div class="review-card__stars" aria-label="5 из 5">★★★★★</div>
-          <p class="review-card__text">Летела первый раз одна в Барселону и очень боялась. Благодаря Natalia's Birds всё оказалось элементарным!</p>
+          <div class="review-card__stars" aria-label="5 out of 5">★★★★★</div>
+          <p class="review-card__text">It was my first time travelling alone to Barcelona and I was so nervous. Thanks to Natalia's Birds everything turned out to be effortless!</p>
         </article>
-
         <article class="review-card">
           <div class="review-card__header">
             <div class="review-card__avatar" aria-hidden="true">
               <svg viewBox="0 0 40 40" width="40" height="40"><circle cx="20" cy="20" r="20" fill="rgb(84 98 127)"/><circle cx="20" cy="15" r="7" fill="rgb(241 220 205)"/><ellipse cx="20" cy="35" rx="12" ry="8" fill="rgb(241 220 205)"/></svg>
             </div>
-            <span class="review-card__name">Даша</span>
+            <span class="review-card__name">Dasha</span>
           </div>
-          <div class="review-card__stars" aria-label="5 из 5">★★★★★</div>
-          <p class="review-card__text">Летели компанией в Дубай, и ни один из нас не остался без места. Отдельное спасибо за внимательность!</p>
+          <div class="review-card__stars" aria-label="5 out of 5">★★★★★</div>
+          <p class="review-card__text">We flew as a group to Dubai and not a single one of us was left without a seat. A special thank you for the care and attention!</p>
         </article>
-
       </div>
-
-      <a class="btn btn--outline gallery-review-btn" href="leave-review.html">✍️ Оставить отзыв</a>
-
+      <a class="btn btn--outline gallery-review-btn" href="leave-review.html">✍️ Leave a Review</a>
     </section>
-
   </main>
 
   <footer class="footer">
@@ -120,6 +108,5 @@
       </ul>
     </div>
   </footer>
-
 </body>
 </html>

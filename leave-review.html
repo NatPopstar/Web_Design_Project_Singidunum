@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Natalia's Birds — Оставить отзыв</title>
+  <title>Natalia's Birds — Leave a Review</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
@@ -12,10 +12,9 @@
   <link rel="icon" href="/html_css_only/logo1.png">
 </head>
 <body>
-
   <nav class="nav" aria-label="Main navigation">
     <input type="checkbox" id="navToggle" class="nav__checkbox" />
-    <label for="navToggle" class="nav__label" aria-label="Открыть меню">
+    <label for="navToggle" class="nav__label" aria-label="Open menu">
       <span class="nav__bar"></span>
       <span class="nav__bar"></span>
       <span class="nav__bar"></span>
@@ -33,109 +32,86 @@
 
   <header class="page-header">
     <div class="page-header__inner">
-      <a class="review-back" href="gallery.html">← Назад в Gallery</a>
-      <h1 class="page-header__title">Оставить отзыв</h1>
-      <p class="page-header__subtitle">Расскажите о своём путешествии — ваш опыт вдохновит других.</p>
+      <a class="review-back" href="gallery.html">← Back to Gallery</a>
+      <h1 class="page-header__title">Leave a Review</h1>
+      <p class="page-header__subtitle">Share your travel experience — your story will inspire others.</p>
     </div>
   </header>
 
   <main class="review-main">
     <div class="review-layout">
 
-      <!-- Left: form -->
       <div class="review-form-wrap">
         <form class="review-form" action="#" method="post" novalidate>
 
-          <!-- Name -->
           <div class="rf-field">
-            <label class="rf-field__label" for="reviewName">Ваше имя</label>
-            <input
-              class="rf-field__input"
-              id="reviewName"
-              type="text"
-              placeholder="Как вас зовут?"
-              autocomplete="given-name"
-            />
+            <label class="rf-field__label" for="reviewName">Your Name</label>
+            <input class="rf-field__input" id="reviewName" type="text" placeholder="What's your name?" autocomplete="given-name" />
           </div>
 
-          <!-- Star rating — CSS-only: hidden radios drive filled stars -->
-          <fieldset class="rf-field rf-stars" aria-label="Ваша оценка">
-            <legend class="rf-field__label">Оценка</legend>
+          <fieldset class="rf-field rf-stars" aria-label="Your rating">
+            <legend class="rf-field__label">Rating</legend>
             <div class="rf-stars__row">
               <input type="radio" id="s5" name="rating" value="5" class="rf-stars__radio" />
-              <label for="s5" class="rf-stars__label" aria-label="5 звёзд">★</label>
-
+              <label for="s5" class="rf-stars__label" aria-label="5 stars">★</label>
               <input type="radio" id="s4" name="rating" value="4" class="rf-stars__radio" />
-              <label for="s4" class="rf-stars__label" aria-label="4 звезды">★</label>
-
+              <label for="s4" class="rf-stars__label" aria-label="4 stars">★</label>
               <input type="radio" id="s3" name="rating" value="3" class="rf-stars__radio" />
-              <label for="s3" class="rf-stars__label" aria-label="3 звезды">★</label>
-
+              <label for="s3" class="rf-stars__label" aria-label="3 stars">★</label>
               <input type="radio" id="s2" name="rating" value="2" class="rf-stars__radio" />
-              <label for="s2" class="rf-stars__label" aria-label="2 звезды">★</label>
-
+              <label for="s2" class="rf-stars__label" aria-label="2 stars">★</label>
               <input type="radio" id="s1" name="rating" value="1" class="rf-stars__radio" />
-              <label for="s1" class="rf-stars__label" aria-label="1 звезда">★</label>
+              <label for="s1" class="rf-stars__label" aria-label="1 star">★</label>
             </div>
           </fieldset>
 
-          <!-- Destination -->
           <div class="rf-field">
-            <label class="rf-field__label" for="reviewDest">Направление</label>
+            <label class="rf-field__label" for="reviewDest">Destination</label>
             <select class="rf-field__select" id="reviewDest">
-              <option value="">— куда летели? —</option>
-              <option>США</option>
-              <option>Канада</option>
-              <option>Ирландия</option>
-              <option>Англия</option>
-              <option>Австралия</option>
-              <option>Новая Зеландия</option>
-              <option>Мальта</option>
-              <option>Сингапур</option>
-              <option>Шотландия</option>
+              <option value="">— where did you fly? —</option>
+              <option>USA</option>
+              <option>Canada</option>
+              <option>Ireland</option>
+              <option>England</option>
+              <option>Australia</option>
+              <option>New Zealand</option>
+              <option>Malta</option>
+              <option>Singapore</option>
+              <option>Scotland</option>
             </select>
           </div>
 
-          <!-- Review text -->
           <div class="rf-field">
-            <label class="rf-field__label" for="reviewText">Текст отзыва</label>
-            <textarea
-              class="rf-field__textarea"
-              id="reviewText"
-              rows="5"
-              placeholder="Расскажите о вашем опыте: как прошёл перелёт, что понравилось, что удивило…"
-            ></textarea>
+            <label class="rf-field__label" for="reviewText">Review</label>
+            <textarea class="rf-field__textarea" id="reviewText" rows="5" placeholder="Tell us about your experience: how was the flight, what stood out, what surprised you…"></textarea>
           </div>
 
-          <!-- Recommend -->
           <div class="rf-field">
-            <label class="rf-field__label" for="reviewRecommend">Посоветуете нас друзьям?</label>
+            <label class="rf-field__label" for="reviewRecommend">Would you recommend us to friends?</label>
             <select class="rf-field__select" id="reviewRecommend">
-              <option value="">— выберите —</option>
-              <option value="yes">Да, обязательно!</option>
-              <option value="no">Нет</option>
+              <option value="">— select —</option>
+              <option value="yes">Yes, absolutely!</option>
+              <option value="no">No</option>
             </select>
           </div>
 
-          <!-- Photo upload hint -->
           <div class="rf-field">
-            <label class="rf-field__label" for="reviewPhoto">Фото из путешествия (необязательно)</label>
+            <label class="rf-field__label" for="reviewPhoto">Travel Photo (optional)</label>
             <label class="rf-upload" for="reviewPhoto">
               <span class="rf-upload__icon">📷</span>
-              <span class="rf-upload__text">Нажмите, чтобы выбрать файл</span>
-              <span class="rf-upload__hint">JPG, PNG — до 5 МБ</span>
+              <span class="rf-upload__text">Click to choose a file</span>
+              <span class="rf-upload__hint">JPG, PNG — up to 5 MB</span>
               <input class="rf-upload__input" id="reviewPhoto" type="file" accept="image/*" />
             </label>
           </div>
 
-          <button class="btn btn--primary rf-submit" type="submit">Отправить отзыв</button>
+          <button class="btn btn--primary rf-submit" type="submit">Submit Review</button>
 
         </form>
       </div>
 
-      <!-- Right: existing reviews preview -->
       <aside class="review-sidebar">
-        <h2 class="review-sidebar__heading">Что говорят другие</h2>
+        <h2 class="review-sidebar__heading">What others say</h2>
 
         <article class="review-preview">
           <div class="review-preview__header">
@@ -145,12 +121,12 @@
               <ellipse cx="20" cy="35" rx="12" ry="8" fill="rgb(241 220 205)"/>
             </svg>
             <div>
-              <p class="review-preview__name">Наташа</p>
-              <p class="review-preview__dest">Мальдивы</p>
+              <p class="review-preview__name">Natasha</p>
+              <p class="review-preview__dest">Maldives</p>
             </div>
             <span class="review-preview__stars">★★★★★</span>
           </div>
-          <p class="review-preview__text">«Всё прошло как в сказке. Места были зарезервированы заранее, нас встретили с улыбками.»</p>
+          <p class="review-preview__text">"Everything went like a dream. Seats were reserved in advance and we were welcomed with big smiles."</p>
         </article>
 
         <article class="review-preview">
@@ -161,12 +137,12 @@
               <ellipse cx="20" cy="35" rx="12" ry="8" fill="rgb(241 220 205)"/>
             </svg>
             <div>
-              <p class="review-preview__name">Маша</p>
-              <p class="review-preview__dest">Барселона</p>
+              <p class="review-preview__name">Maria</p>
+              <p class="review-preview__dest">Barcelona</p>
             </div>
             <span class="review-preview__stars">★★★★★</span>
           </div>
-          <p class="review-preview__text">«Летела первый раз одна и очень боялась. Благодаря Natalia's Birds всё оказалось элементарным!»</p>
+          <p class="review-preview__text">"It was my first time travelling alone and I was nervous. Thanks to Natalia's Birds everything turned out effortless!"</p>
         </article>
 
         <article class="review-preview">
@@ -177,15 +153,15 @@
               <ellipse cx="20" cy="35" rx="12" ry="8" fill="rgb(241 220 205)"/>
             </svg>
             <div>
-              <p class="review-preview__name">Даша</p>
-              <p class="review-preview__dest">Дубай</p>
+              <p class="review-preview__name">Dasha</p>
+              <p class="review-preview__dest">Dubai</p>
             </div>
             <span class="review-preview__stars">★★★★★</span>
           </div>
-          <p class="review-preview__text">«Летели компанией, и ни один из нас не остался без места. Отдельное спасибо за внимательность!»</p>
+          <p class="review-preview__text">"We flew as a group and not a single one of us was left without a seat. A special thank you for the care!"</p>
         </article>
 
-        <a class="btn btn--outline review-sidebar__btn" href="gallery.html">Читать все отзывы →</a>
+        <a class="btn btn--outline review-sidebar__btn" href="gallery.html">Read all reviews →</a>
       </aside>
 
     </div>
@@ -201,6 +177,5 @@
       </ul>
     </div>
   </footer>
-
 </body>
 </html>

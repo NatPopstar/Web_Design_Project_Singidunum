@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,10 +12,9 @@
   <link rel="icon" href="/html_css_only/logo1.png">
 </head>
 <body>
-
   <nav class="nav" aria-label="Main navigation">
     <input type="checkbox" id="navToggle" class="nav__checkbox" />
-    <label for="navToggle" class="nav__label" aria-label="Открыть меню">
+    <label for="navToggle" class="nav__label" aria-label="Open menu">
       <span class="nav__bar"></span>
       <span class="nav__bar"></span>
       <span class="nav__bar"></span>
@@ -34,101 +33,92 @@
   <header class="page-header">
     <div class="page-header__inner">
       <h1 class="page-header__title">Blog</h1>
-      <p class="page-header__subtitle">Истории наших клиентов из путешествий по всему миру.</p>
+      <p class="page-header__subtitle">Travel stories from our clients around the world.</p>
     </div>
   </header>
 
   <main class="blog-layout">
 
-    <!-- Left sidebar -->
     <aside class="blog-sidebar blog-sidebar--left">
       <div class="sidebar-widget">
-        <h3 class="sidebar-widget__heading">Последние записи</h3>
+        <h3 class="sidebar-widget__heading">Recent Posts</h3>
         <ul class="recent-list">
           <li class="recent-list__item">
-            <a href="#article1" class="recent-list__link">Неделя на Мальте: солнце, рыцари и лазурные лагуны</a>
+            <a href="#article1" class="recent-list__link">A Week in Malta: Sun, Knights and Azure Lagoons</a>
             <span class="recent-list__date">23.05.2025</span>
           </li>
           <li class="recent-list__item">
-            <a href="#article2" class="recent-list__link">Сингапур за 48 часов: гайд для тех, кто ценит время</a>
+            <a href="#article2" class="recent-list__link">Singapore in 48 Hours: A Guide for Those Who Value Their Time</a>
             <span class="recent-list__date">20.05.2025</span>
           </li>
           <li class="recent-list__item">
-            <a href="#article3" class="recent-list__link">Шотландия в октябре: туман, вереск и правильный виски</a>
+            <a href="#article3" class="recent-list__link">Scotland in October: Fog, Heather and the Right Whisky</a>
             <span class="recent-list__date">16.05.2025</span>
           </li>
         </ul>
       </div>
     </aside>
 
-    <!-- Center feed -->
     <section class="blog-feed" aria-label="Articles">
 
       <article class="article-card" id="article1">
         <div class="article-card__meta">
-          <span class="article-card__author">Анастасия</span>
+          <span class="article-card__author">Anastasia</span>
           <span class="article-card__date">23.05.2025</span>
         </div>
-        <h2 class="article-card__title">Неделя на Мальте: солнце, рыцари и лазурные лагуны</h2>
+        <h2 class="article-card__title">A Week in Malta: Sun, Knights and Azure Lagoons</h2>
         <div class="article-card__stars">★★★★★</div>
-        <p class="article-card__excerpt">Мальта оказалась именно такой, как я мечтала: тёплое море, мощёные улочки Валлетты и невероятные закаты над бухтой Марсашлокк. Благодаря Natalia's Birds место на рейсе было за мной ещё за три месяца до отъезда…</p>
+        <p class="article-card__excerpt">Malta was exactly as I had always dreamed: a warm sea, the cobbled streets of Valletta and breathtaking sunsets over Marsaxlokk Bay. Thanks to Natalia's Birds, my seat on the flight was secured three months before departure…</p>
       </article>
 
       <article class="article-card" id="article2">
         <div class="article-card__meta">
-          <span class="article-card__author">Виктория</span>
+          <span class="article-card__author">Victoria</span>
           <span class="article-card__date">20.05.2025</span>
         </div>
-        <h2 class="article-card__title">Сингапур за 48 часов: гайд для тех, кто ценит время</h2>
+        <h2 class="article-card__title">Singapore in 48 Hours: A Guide for Those Who Value Their Time</h2>
         <div class="article-card__stars">★★★★★</div>
-        <p class="article-card__excerpt">Транзит через Сингапур превратился в одно из лучших путешествий в моей жизни. Gardens by the Bay ночью, Chinatown с рассветом, лучший laksa в Maxwell Food Centre…</p>
+        <p class="article-card__excerpt">A layover in Singapore turned into one of the best trips of my life. Gardens by the Bay at night, Chinatown at sunrise, the best laksa at Maxwell Food Centre…</p>
       </article>
 
       <article class="article-card" id="article3">
         <div class="article-card__meta">
-          <span class="article-card__author">Дарья</span>
+          <span class="article-card__author">Daria</span>
           <span class="article-card__date">16.05.2025</span>
         </div>
-        <h2 class="article-card__title">Шотландия в октябре: туман, вереск и правильный виски</h2>
+        <h2 class="article-card__title">Scotland in October: Fog, Heather and the Right Whisky</h2>
         <div class="article-card__stars">★★★★★</div>
-        <p class="article-card__excerpt">Октябрь — лучшее время для Шотландии. Туристов мало, хайленды окрашены в золото и багрянец, а в каждом пабе тебя угощают историями не хуже, чем виски…</p>
+        <p class="article-card__excerpt">October is the best time for Scotland. Few tourists, the Highlands painted gold and crimson, and in every pub the stories are as good as the whisky…</p>
       </article>
 
     </section>
 
-    <!-- Right sidebar -->
     <aside class="blog-sidebar blog-sidebar--right">
       <div class="sidebar-widget">
-        <h3 class="sidebar-widget__heading">Написать статью</h3>
+        <h3 class="sidebar-widget__heading">Write an Article</h3>
         <form class="post-form" action="#" method="post" novalidate>
-
           <div class="post-form__field">
-            <label class="post-form__label" for="postTitle">Заголовок</label>
-            <input class="post-form__input" id="postTitle" type="text" placeholder="Название вашей статьи" />
+            <label class="post-form__label" for="postTitle">Title</label>
+            <input class="post-form__input" id="postTitle" type="text" placeholder="Name of your article" />
           </div>
-
           <div class="post-form__field">
-            <label class="post-form__label" for="postText">Текст</label>
-            <textarea class="post-form__textarea" id="postText" rows="5" placeholder="Расскажите о вашем путешествии…"></textarea>
+            <label class="post-form__label" for="postText">Text</label>
+            <textarea class="post-form__textarea" id="postText" rows="5" placeholder="Tell us about your journey…"></textarea>
           </div>
-
           <div class="post-form__field">
-            <label class="post-form__label" for="postPhoto">Фотография</label>
+            <label class="post-form__label" for="postPhoto">Photo</label>
             <label class="post-form__upload" for="postPhoto">
               <span class="post-form__upload-icon">📷</span>
-              <span class="post-form__upload-text">Выбрать файл</span>
-              <span class="post-form__upload-hint">JPG, PNG — до 5 МБ</span>
+              <span class="post-form__upload-text">Choose file</span>
+              <span class="post-form__upload-hint">JPG, PNG — up to 5 MB</span>
               <input class="post-form__upload-input" id="postPhoto" type="file" accept="image/*" />
             </label>
           </div>
-
           <div class="post-form__field">
-            <label class="post-form__label" for="postNick">Никнейм</label>
-            <input class="post-form__input" id="postNick" type="text" placeholder="Как вас называть?" />
+            <label class="post-form__label" for="postNick">Nickname</label>
+            <input class="post-form__input" id="postNick" type="text" placeholder="What should we call you?" />
           </div>
-
-          <button class="btn btn--primary post-form__submit" type="submit">Отправить статью</button>
-
+          <button class="btn btn--primary post-form__submit" type="submit">Submit Article</button>
         </form>
       </div>
     </aside>
@@ -145,6 +135,5 @@
       </ul>
     </div>
   </footer>
-
 </body>
 </html>
